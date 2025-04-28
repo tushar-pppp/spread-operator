@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const originalArray = [1, 2, 3];
+const newArray = [...originalArray]; // Creates a new array with the same elements
+
+newArray.push(4);
+console.log(originalArray); // Output: [ 1, 2, 3 ] (unchanged)
+console.log(newArray);      // Output: [ 1, 2, 3, 4 ]
+
+const originalObject = { a: 1, b: 2 };
+const newObject = { ...originalObject, c: 3 }; // Creates a new object with added property
+
+newObject.a = 10;
+console.log(originalObject.a); // Output: 1 (unchanged)
+console.log(newObject);       // Output: { a: 10, b: 2, c: 3 }
+    </script>
+</body>
+</html>

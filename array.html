@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       const original = [10, 20];
+const withBeginning = [5, ...original];
+const withEnd = [...original, 30];
+withEnd.pop()
+console.log(original);      // Output: [ 10, 20 ]
+console.log(withBeginning); // Output: [ 5, 10, 20 ]
+console.log(withEnd);       // Output: [ 10, 20, 30 ]
+    </script>
+</body>
+</html>
